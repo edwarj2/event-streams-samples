@@ -29,7 +29,7 @@ import rest
 class EventStreamsSample(object):
 
     def __init__(self, args):
-        self.topic_name = 'kafka-python-console-sample-topic'
+        self.topic_name = 'kafka-python-johns-play-topic'
         self.opts = {}
         self.run_consumer = True
         self.run_producer = True

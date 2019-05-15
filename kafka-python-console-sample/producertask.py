@@ -42,9 +42,9 @@ class ProducerTask(object):
     def run(self):
         print('The producer has started')
         while self.running:
-            message = 'This is a test message #{0}'.format(self.counter)
+            message = 'This is a test message (from John)#{0}'.format(self.counter)
             key = 'key'
-            sleep = 2 # Short sleep for flow control
+            sleep = 2 # Trying zero Not - Short sleep for flow control
             try:
                 self.producer.produce(self.topic_name, message, key, -1, self.on_delivery)
                 self.producer.poll(0)
